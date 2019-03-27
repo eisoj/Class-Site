@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://chad-bennett.github.io/eresa/demo/transform.html -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>transforms page</title>
+  <style>
+    body {
+      background-color: #000;
+    }
+
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      margin: 1rem;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    #box1 {transition: transform 3s;
+    transition-timing-function: linear;}
+
+    #box1:hover {transform: rotate(45deg);
+    border-radius: 3%}
+
+    #box2 {transition: border-radius 3s;
+    transition-timing-function: linear;}
+
+    #box2:hover {border-radius: 100%;}
+
+    #box3 {transition: transform 2s;
+    transition-timing-function: linear;}
+
+    #box3:hover {transform: scale(1.5, 1.5);
+      border-radius: 15%;}
+
+    #box4 {transition: transform 20s;
+    transition-timing-function: linear;}
+
+    #box4:hover {transform: matrix(50, 1, 2, 1, 5, 0);}
+
+    #box5 {transition: transform 3s;}
+
+    #box5:hover {transform: rotateX(100deg);}
+
+    #box6 {transition: transform 1.5s;}
+
+    #box6:hover {transform: perspective(150px) rotateX(45deg);}
+
+    #box7 {}
+
+    #box7:hover {background-image: url("Untitled1.gif");
+    background-position: center;}
+
+.cube :hover {
+  position: relative;
+}
+.side {
+  height: 95px;
+  position: absolute;
+  width: 95px;
+}
+.top {
+  background: #9acc53;
+  transform: rotate(-45deg) skew(15deg, 15deg);
+}
+.left {
+  background: #8ec63f;
+  transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+}
+.right {
+  background: #80b239;
+  transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div id="box1"> </div>
+  <div id="box2"> </div>
+  <div id="box3"> </div>
+  <div id="box4"> </div>
+  <div id="box5"> </div>
+  <div id="box6"> </div>
+  <div id="box7"> </div>
+  <div class="cube">
+  <figure class="side top"></figure>
+  <figure class="side left"></figure>
+  <figure class="side right"></figure></div>
+
+
+
+</body></html>
