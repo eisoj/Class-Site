@@ -115,22 +115,22 @@ footer {
 }
 
 a {
-  background: linear-gradient(0deg, var(--blue-color), var(--blue-color));
+  background: none;
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 6px 1px;
-  color: var(--blue-color);
+  color: white;
   font-weight: 600;
   text-decoration: none;
   transition: background-size .3s, color .3s;
-  padding: 3px;
+  padding: 2px;
 }
 
-a:hover {
+/*a:hover {
   background-size: 4px 50px;
   color: var(--white-color);
   box-shadow: 2px 2px 3px #49494233;
-}
+}*/
 
 .grid .color-box a {
   background: linear-gradient(0deg, var(--black-color), var(--black-color));
